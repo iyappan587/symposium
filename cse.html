@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #2e0060, #17055f);
+  font-family: "Mulish", sans-serif;
+  color: #495057;
+}
+.dbg-rule,
+.uiux-rule,
+.p-pre-rule,
+.p-expo-rule {
+  text-align: start;
+  color: white;
+}
+
+.header-container {
+  background: rgb(77, 0, 101);
+  background: linear-gradient(135deg, #07000f, #060606);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+header .dept1-heading,
+.dept2-heading {
+  padding: 20px 7px 0 0;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 50px;
+  font-style: normal;
+  color:rgb(152, 128, 240)
+}
+
+header .dept1-heading {
+  font-size: 25px;
+  text-shadow: 0px 0px 5px #87af1b, 0px 0px 10px #93d3a2, 0px 0px 10px #d3c993,
+    0px 0px 20px #b393d3;
+}
+
+.dept1-img {
+  height: 50px;
+}
+
+.event {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.event-one,
+.event-two,
+.event-three,
+.event-four {
+  padding: 20px;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.event-one,
+,
+.event-four {
+  padding-bottom: 40px;
+}
+
+.evt-pg-h {
+  background-color: aliceblue;
+  color: #090000;
+  font-family: "Anton", sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.evt-head {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.uiux-img,
+.dbg-img,
+.p-pre-img,
+.p-expo-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 300px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+/* .p-expo-img {
+  height: 300px;
+  width: 500px;
+} */
+
+.evt-org {
+  text-align: center;
+  background-color: #495057;
+  padding: 20px;
+  margin: 40px 0;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .dept2-heading {
+    font-size: 2rem;
+  }
+
+  .dept1-heading {
+    font-size: 1rem;
+  }
+
+  .event-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .evt-pg-h {
+    font-size: 2rem;
+  }
+
+  .uiux-img,
+  .dbg-img,
+  .p-pre-img,
+  .p-expo-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dept2-heading {
+    color: #ffffff;
+    font-size: 1.8rem;
+  }
+
+  .dept1-heading {
+    font-size: 1rem;
+  }
+
+  .event-one,
+  .event-two {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .evt-pg-h {
+    font-size: 1.8rem;
+  }
+
+  .uiux-img,
+  .dbg-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+
+    </style>
+    <title>CSE</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="logo/techfestlogo1.png" style="width: 190px;" alt="tech fest logo">
+          
+          <img src="logo/cselogo.jpg" style="width: 190px; padding-right:10px; margin:20px" alt="dept logo">
+        <h1 style="color:linear-gradient(135deg, #fdfbfe, #503bc7);" class="dept2-heading">
+          Computer Science and Engineering
+        </h1>
+      </div>
+    </header>
+    <div class="event">
+      <h1  class="evt-pg-h">EVENTS</h1>
+      <div class="event-container">
+        <div class="event-one">
+          <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?t=st=1729759238~exp=1729762838~hmac=45318814e793303c5e7f212e0c420832f74b1862c0dbc78ed4d3423b542c9d31&w=1060" alt="ui/ux" class="uiux-img" />
+          <h1 class="ui/ux-head evt-head">UI/UX DESIGN</h1>
+          <p>
+            <ol class="uiux-rule">
+              <li>Designing Software – Figma.</li>
+              <li>Theme will be given on the day of the event .</li>
+              <li>No Electronic device will be allowed inside the hall.</li>
+              <li>Judges’ Decision is final in case of any dispute.</li>
+              <li>Malpractice or any activity against the rules of the Symposium or Event lead to disqualification.</li>
+              <li>Politeness and proper mannerism will be well appreciated .</li>
+              <li>Kindly be present on time for the event to avoid any inconvenience.</li>
+            </ol>
+          </p>
+        </div>
+        <div class="event-two">
+          <img src="https://img.freepik.com/free-vector/software-tester-concept-illustration_114360-12815.jpg?ga=GA1.1.902240047.1729707986&semt=ais_hybrid" alt="debugging" class="dbg-img" />
+          <h1 class="dbg-head evt-head">DEBUGGING</h1>
+          <p>
+            <ol class="dbg-rule">
+              <h3>INDIVIDUAL EVENT:</h3>
+              <li>This contests contains problems in C, JAVA, PYTHON</li>
+              <li>No Electronic device will be allowed inside the hall.</li>
+              <li>Politeness and proper behaviour Should be followed.</li>
+              <li>The jury’s decision is final, and arguments or disputes will not be permitted.</li>
+              <li>Kindly be present on time for the event.</li>
+              <!-- <li>Malpractice or any activity against the rules of the Symposium or Event might
+                lead to disqualification.</li> -->
+            <ol>
+          </p>
+        </div>
+        <div class="event-three">
+          <img src="https://img.freepik.com/premium-photo/dynamic-startup-pitch-presentation-presenter-pointing-slide-deck-front-engaged-audience_34950-40174.jpg?ga=GA1.1.902240047.1729707986&semt=ais_hybrid" alt="p-presentation" class="p-pre-img" />
+          <h1 class="p-pre-head evt-head">Paper Presentation</h1>
+          <p>
+            <ol class="p-pre-rule">
+              <h3>Rules and Regulation:</h3>
+              <li>Maximum number of participants in a team should be 3</li>
+              <li>The participants can choose any one of the themes</li>
+              <li>The team will be given 07 minutes for presentation (5 mins for presentation and 2 mins for queries)</li>
+              <li>The participants must submit the soft copy of their presentation through mail id 3 days before the symposium</li>
+              <li>The ppt should contains total of 8-10 slides of the following details</li>
+              a. Title<br>
+              b. Team member names<br>
+              c. College names<br>
+              d. Department & year
+              <li>The participants should contain ppt and pdf formats of their presentation</li>
+              <li>The decision of the jury will be final and no arguments</li>
+              <li>Kindly be present on time for the event</li>
+              <li>send your papers to <strong style="color:yellow;"> techfest@care.ac.in </strong> </li>
+            </ol>
+          </p>
+          <ol style="color: #f8f6f6;">
+            <p><strong>CONTACT DETAILS:</p>
+              <p>
+           <p> Staff Coordinator:<br /></p>
+           <p> MRS.R.RANITHA/CSE –9894250879<p>
+           <p> MRS.ANNE PRATHEEBA/CSE –9942711335 </p>
+           <p>Student Coordinator:</p>
+              </ol>
+              <ol style="color: #f7f2f2;">
+           <P>N.KARTHICKRAJA – 8838595603</P>
+      </strong></p>
+      </ol>
+        </div>
+        <div class="event-four">
+          <img src="https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?ga=GA1.1.902240047.1729707986&semt=ais_hybrid" class="p-expo-img" />
+          <h1 class="p-expo-head evt-head">Project-Expo</h1>
+          <p>
+            <ol class="p-expo-rule">
+              <h3>Rules and Regulations:</h3>
+              <li>Teams may consist of maximum 2 members, both are from same or inter departments.</li>
+              <li>Projects should align with the theme and must be original and created by the participants.</li>
+              <li>Each team will have 10 minutes to present. During the presentation, team members must explain the working principle, all the techniques aspects, parts/components used and highlight the uniqueness of the project.</li>
+              <li>If the product is patented or applied for patent proof, it must be shown to the judges, which will earn an additional weightage for the project.</li>
+              <li>The juries evaluate project based on the originality, creativity, technical merit, implementation, clarity of presentation and relevance to the theme.</li>
+              </li>The decision of the judges will be final, no further disputes will be entertained after the results are declared.</li>
+            <ol>
+          </p>
+          <ol style="color: #fefafa;">
+            <p><strong>CONTACT DETAILS:</p>
+              <p>
+           <p> Staff Coordinator:<br /></p>
+           <P> DR.GOBALAKRISHNAN – 9790567377<br /><br /></P>
+           <p>Student Coordinator:<br /></p>
+              </ol>
+              <ol style="color: #f3efef;">
+           <P>R.VIGNESHWARAN – 8940209381</P>
+      </strong></p>
+      </ol>
+        </div>
+      </div>
+    </div>
+    <a class="button-78" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+    </svg>Back</a>
+    <div class="evt-org">
+      <p>CONTACT DETAILS:</p>
+      <p>
+        Staff Coordinator:<br />
+        Mrs. Anitha M/AI&DS – 9442108806<br /><br />
+        Student Coordinator:<br />
+        Mr. Vignesh P/CSE – 9025619163
+      </p>
+    </div>
+  </body>
+</html>

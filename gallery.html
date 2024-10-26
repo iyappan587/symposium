@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("https://img.freepik.com/free-vector/stage-spot-lights-rays-glowing-background_1017-31524.jpg?ga=GA1.1.2011788923.1729587380&semt=ais_hybrid");
+        background-size: cover; /* Cover the entire body */
+        background-position: center; /* Center the background image */
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-image: url("https://img.freepik.com/free-vector/concert-stage-stairs-with-spotlights-confetti_107791-29272.jpg?ga=GA1.1.2011788923.1729587380&semt=ais_hybrid");
+        background-color: #5a7184; /* Fallback color */
+        color: white;
+        border-radius: 20px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+        margin: 20px; /* Margin around the header */
+      }
+
+      .video-gallery {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(300px, 1fr)
+        ); /* Responsive grid */
+        gap: 15px; /* Space between videos */
+        padding: 15px;
+      }
+
+      .video-container {
+        overflow: hidden; /* Hide overflow */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      }
+
+      video {
+        width: 100%; /* Make video responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom space */
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(300px, 1fr)
+        ); /* Responsive grid */
+        gap: 15px; /* Space between images */
+        padding: 15px;
+      }
+
+      .gallery-item {
+        overflow: hidden; /* Hide overflow */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom space */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Event Gallery</h1>
+    </header>
+
+    <div class="video-gallery">
+      <div class="video-container">
+        <video controls>
+          <source src="images/Teaser-1.webm" type="video/mp4" />
+          <!-- <source src="https://caresymposium.shop/wp-content/uploads/2024/10/Teaser-1.webm" type="video/mp4"> -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="gallery/techfest24poster.jpg.jpg" alt="Image 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/poster1.png.jpg" alt="Image 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/poster2.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/poster3.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="gallery/poster4.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="gallery//poster5.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/mq poster.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/mech poster.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/sh poster.jpg" alt="Image 3" />
+      </div>
+    </div>
+  </body>
+</html>

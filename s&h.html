@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/WhatsApp Image 2024-10-23 at 10.29.57_6793a484.jpg">
+    <title>SCIENCE AND HUMANITIES</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: hsl(43, 3%, 50%);
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+.header-container {
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-container img {
+  padding-left: 0px;
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align items */
+  }
+  
+  .header-container img {
+      width: 80%; /* Adjust image width on mobile */
+      margin: 10px 0; /* Add margin between images */
+  }
+
+  h1.dept2-heading {
+      font-size: 1.5em; /* Adjust heading size for mobile */
+      text-align: center; /* Center the heading */
+  }
+}
+
+.header-container {
+  color: #070707;
+  background: linear-gradient(135deg, #000000, #030109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+  padding-top: 05px;
+  padding-bottom: 20px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .dept1-heading,
+.dept2-heading {
+  margin: 0px;
+  padding: 2px 7px 0 0;
+  padding-left:10px;
+  padding-right: 10px;
+  font-size: 55px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+header .dept1-heading {
+  font-size: 25px;
+  text-shadow: 0px 0px 5px #87af1b, 0px 0px 10px #93d3a2, 0px 0px 10px #d3c993,
+    0px 0px 20px #000000;
+}
+
+.dept1-img {
+  height: 50px;
+}
+
+.event {
+  background-color: #495057;
+  padding-top: 12px;
+  text-align: center;
+}
+
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.event-one
+ {
+  padding: 20px;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+  background-color: rgb(150, 150, 150);
+}
+
+.event-two {
+  padding: 20px;
+padding-bottom:0px;;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+  background-color: rgb(150, 150, 150);
+}
+.event-three
+ {
+  padding: 20px;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+  background-color: rgb(150, 150, 150);
+}
+.event-four {
+  padding: 20px;
+padding-bottom:20px;;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+  background-color: rgb(150, 150, 150);
+}
+
+.evt-pg-h {
+  color: #070707;
+  font-family: "Anton", sans-serif;
+  background-color: antiquewhite;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.evt-head {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.uiux-img,
+.dbg-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.evt-org {
+  text-align: center;
+  background-color: #495057;
+  padding: 20px;
+  margin: 40px 0;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .dept2-heading {
+    font-size: 2rem;
+  }
+
+  .dept1-heading {
+    font-size: 1rem;
+  }
+
+  .event-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .evt-pg-h {
+    font-size: 2rem;
+  }
+
+  .uiux-img,
+  .dbg-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dept2-heading {
+    font-size: 1.8rem;
+  }
+
+  .dept1-heading {
+    font-size: 1rem;
+  }
+
+  .event-one,
+  .event-two {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .evt-pg-h {
+    font-size: 1.8rem;
+  }
+
+  .uiux-img,
+  .dbg-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="logo/techfestlogo1.png" style="width: 190px;" alt="tech fest logo">
+        <img src="logo/gesalogo.jpg" style="width: 130px; padding-right:10px; margin:20px " alt="dept logo">
+        <h1 class="dept2-heading">
+          SCIENCE AND HUMANITIES
+        </h1>
+        <!-- <img src="images/WhatsApp Image 2024-10-24 at 14.22.33_467c44fa.jpg" alt="college logo" style="width:250px; padding-right:30px"> -->
+      </div>
+    </header>
+    <div class="event">
+      <h1 class="evt-pg-h">EVENTS</h1>
+      <div class="event-container">
+        <div class="event-one">
+          <img src="https://img.freepik.com/premium-photo/person-writing-piece-paper-with-pen-their-hand_1153744-87739.jpg?ga=GA1.1.2011788923.1729587380&semt=ais_hybrid" alt="ui/ux" class="uiux-img" />
+          <h1 class="ui/ux-head evt-head">ESSAY WRITING
+          </h1>
+          <div style="text-align: start; padding:20px">
+          <p style="color: black;"><strong>Rules and Regulations:</strong></p>
+          <ol style="color: black;">
+              <li>Topic will be announced on the spot.</li>
+              <li>Essay should be in 500 – 600 words.</li>
+              <li>Time limit is 50 minutes.</li>
+              <li>Assessment Metrics – Language, Reasoning with evidence, Coherence & Legible handwriting.</li>
+          </ol>
+          </div>
+        </div>
+        <div class="event-two">
+          <img style="width: 120%;" src="https://img.freepik.com/premium-photo/three-men-are-looking-chart-that-says-no_1130573-139396.jpg?semt=ais_hybrid" alt="debugging" class="dbg-img" />
+          <h1 class="dbg-head evt-head">MATH QUIZ</h1>
+          <div style="text-align: start; padding:20px">
+            <p style="color: black;"><strong>Rules and Regulations:</strong></p>
+            <ol style="color: black;">
+                <li>Three people are allowed per team.</li>
+                <li>Smartphone and calculator usage are prohibited.</li>
+                <li>Marks will be provided transparently and fairly.</li>
+                <li>Teams may hold a limited amount of time to respond; after this time, the opportunity will be transferred to another team.</li>
+                <li>Judges decisions are final</li>
+            </ol>
+            </div>
+        </div>
+        <div class="event-three">
+          <img src="https://img.freepik.com/premium-photo/presentation-conference-hall-with-presentation-screen_1097192-86583.jpg?ga=GA1.1.2011788923.1729587380&semt=ais_hybrid" alt="ui/ux" class="uiux-img" />
+          <h1 class="ui/ux-head evt-head">PAPER PRESENTATION
+          </h1>
+          <div style="text-align: start; padding:20px">
+          <p style="color: black;"><strong>Rules and Regulations:</strong></p>
+          <ol style="color: black;">
+            <li>Maximum number of participants in a team should be 3</li>
+            <li>The participants can choose any one of the themes</li>
+            <li>The team will be given 07 minutes for presentation (5 mins for presentation and 2 mins for queries)</li>
+            <li>The participants must submit the soft copy of their presentation through mail id 3 days before the symposium</li>
+            <li>The ppt should contains total of 8-10 slides of the following details</li>
+            a. Title<br>
+            b. Team member names<br>
+            c. College names<br>
+            d. Department & year
+            <li>The participants should contain ppt and pdf formats of their presentation</li>
+            <li>The decision of the jury will be final and no arguments</li>
+            <li>Kindly be present on time for the event</li>
+            <li>send your papers to <strong style="color: yellow;">techfest@care.ac.in</strong></li>
+          </ol>
+          <br><br>
+          <ol style="color: #000000;">
+            <p><strong>CONTACT DETAILS:</p>
+           <p> Staff Coordinator:</p>
+           <p> MRS.R.RANITHA/CSE –9894250879</p>
+           <p> MRS.ANNE PRATHEEBA/CSE –9942711335 </p>
+           <p>Student Coordinator:</p>
+              </ol>
+              <ol style="color: #000000;">
+           <P>N.KARTHICKRAJA – 8838595603</P>
+      </strong></p>
+      </ol>
+          </div>
+        </div>
+        <div class="event-four">
+          <img style="width: 120%;" src="https://img.freepik.com/premium-photo/illustration-by-mojograph_1176614-64504.jpg?ga=GA1.1.2011788923.1729587380&semt=ais_hybrid" alt="debugging" class="dbg-img" />
+          <h1 class="dbg-head evt-head">PROJECT-EXPO</h1>
+          <div style="text-align: start; padding:20px">
+            <p style="color: black;"><strong>Rules and Regulations:</strong></p>
+            <ol style="color: black;">
+              <li>Teams may consist of maximum 2 members, both are from same or inter departments.</li>
+              <li>Projects should align with the theme and must be original and created by the participants.</li>
+              <li>Each team will have 10 minutes to present. During the presentation, team members must explain the working principle, all the techniques aspects, parts/components used and highlight the uniqueness of the project.</li>
+              <li>If the product is patented or applied for patent proof, it must be shown to the judges, which will earn an additional weightage for the project.</li>
+              <li>The juries evaluate project based on the originality, creativity, technical merit, implementation, clarity of presentation and relevance to the theme.</li>
+              </li>The decision of the judges will be final, no further disputes will be entertained after the results are declared.</li>
+            </ol>
+            <br><br>
+            <ol style="color: #000000;">
+              <p><strong>CONTACT DETAILS:</p>
+                 <p> Staff Coordinator:<br /></p>
+             <P> DR.GOBALAKRISHNAN – 9790567377<br /><br /></P>
+             <p>Student Coordinator:<br /></p>
+                </ol>
+                <ol style="color: #000000;">
+             <P>R.VIGNESHWARAN – 8940209381</P>
+        </strong></p>
+        </ol>
+            </div>
+        </div>
+       </div>
+    </div>
+    <a class="button-78" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+    </svg>Back</a>
+    <div class="evt-org">
+      <p>CONTACT DETAILS:</p>
+      <p>
+        Staff Coordinator:<br />
+        MR.T.JOSEPH ROZARIO –  9597409153<br /><br />
+        Student Coordinator:<br />
+        P.NIKHILL VASUDEVA RAO – 8344222996
+      </p>
+    </div>
+  </body>
+</html>
