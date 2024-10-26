@@ -107,6 +107,11 @@
     color: #0a0a0a;
     
 }
+.navbar-nav .nav-link{
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+}
 .banner-section-bg-container {
 
     width: 100%;
@@ -250,8 +255,8 @@
 .menu-item-link {
     color: #d0b200;
     font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .menu-item-card {
