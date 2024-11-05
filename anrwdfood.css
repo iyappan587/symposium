@@ -114,6 +114,18 @@
     border-color: #d0b200;
     border-radius: 8px;
 }
+.reg-fee{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top:10px;
+
+}
+.reg-fee-amd{
+    font-size: 22px;
+    color: red;
+    font-weight: 900;
+}
 
 .wcu-section {
     background-color: #f9fbfe;
